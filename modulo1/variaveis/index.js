@@ -25,4 +25,5 @@ que e resposta pelo prompt e uma string*/
 
 console.log(nomeCompleto, idadeAtual)
 console.log("Olá", nomeCompleto, "você tem", idadeAtual, "anos")
+.
 
