@@ -1,4 +1,4 @@
-// EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
+// **EXEMPLOS DE IMPLEMENTAÇÃO** ---------------------------------------------------------------
 
 // EXERCÍCIO 0A
 function soma(num1, num2) {
@@ -10,6 +10,7 @@ function soma(num1, num2) {
 function imprimeMensagem() {
   // implemente sua lógica aqui
   const mensagem = prompt('Digite uma mensagem!')
+
   console.log(mensagem)
 }
 
@@ -18,83 +19,90 @@ function imprimeMensagem() {
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
   // implemente sua lógica aqui
-  const msg_altura = prompt("Digite a altura de um triângulo")
-  const msg_largura = prompt("Digite a largura de um triângulo")
-  const resultado = msg_altura * msg_largura
-  console.log(resultado)
+  const altura = Number(prompt('Digite a altura de um retângulo'))
+  const largura = Number(prompt('Digite a largura de um retângulo'))
+  const areaRetangulo = (altura)*(largura)
+  const resultadoAreaRetangulo = areaRetangulo
+  console.log(resultadoAreaRetangulo)
 }
 
 // EXERCÍCIO 02
 function imprimeIdade() {
   // implemente sua lógica aqui
-  const msg_ano = prompt("Qual o ano atual?")
-  const msg_nascimento = prompt("Qual é o ano do seu nascimento?")
-  const resultado_idade = msg_atual - msg_nascimento
-  console.log(resultado)
+  const ano_Atual = Number(prompt('Qual o ano atual?'))
+  const ano_de_Nascimento = Number(prompt('Qual o ano do seu nascimento?'))
+  const idade = (ano_Atual) - (ano_de_Nascimento)
+  console.log(idade)
 }
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-  const peso = prompt("Qual o seu peso em kg?")
-  const altura = prompt("Qual a sua altura em metros?")
-  const resultado_imc = peso / (altura * altura)
-  console.log(resultado_imc)
+  return peso / (altura * altura)
 }
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
   // implemente sua lógica aqui
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
-
+  const nome = prompt('Qual é o seu nome?')
+  const idade = prompt('Qual é a sua idade?')
+  const email = prompt('Qual é o seu e-mail?')
+  console.log('Meu nome é ' + nome + ', tenho ' + idade + ' anos, e o meu email é ' + email + '.')
 }
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+  const cor1 = prompt('Qual é a sua primeira cor favorita?')
+  const cor2 = prompt('Qual é a sua segunda cor favorita?')
+  const cor3 = prompt('Qual é a sua terceira cor favorita?')
+  let cores_favoritas = [cor1, cor2, cor3]
+  console.log(cores_favoritas)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  return string.toUpperCase()
+  
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+  return custo / valorIngresso
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+  return string1.length == string2.length
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  return array[0]
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  return array[array.length-1]
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+  return array.reverse()
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
+  return string1.toUpperCase() == string2.toUpperCase()
 }
 
 // EXERCÍCIO 13
