@@ -36,36 +36,10 @@ console.log(retornaArrayOrdenado(array))
 /*
 
 function retornaNumerosPares(array) {
-    let pares = function (numero) {
-        return (numero % 2 ===0);
-        }
-        let numerosPar = array.filter(pares);
-        return numerosPar
-    }
-
-    function retornaNumerosPares(array) {
-        let pares = function(item){
-            return item % 2 === 0
-        }
-        return array.filter(pares)
-      }
-
     
-/*
-const par = 
-const apenasNumerosPares = arrayVariados.filter(array, indice, array) => 
-{
-    if (arrayVariados === par)
-    return 
-}
-
-const arrayPar = (array) => {
-    if (array % 2 === 0){
-        const resultadoPar = array
-        console.log(resultadoPar)
-    }
 
 }
+
 */
  //EXERCÍCIO 05
  /*
@@ -81,8 +55,8 @@ function retornaNumerosParesElevadosADois(array) {
 let array = [8, 2, 9, 4, 1]
 l
 function retornaMaiorNumero(array) {
-    return = array.sort((a, b) => a - b);
-let novoArray = 
+    
+
 }
 
 /*
