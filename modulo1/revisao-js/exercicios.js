@@ -32,32 +32,46 @@ console.log(retornaArrayOrdenado(array))
 */
 
 
-// EXERCÍCIO 04
+// EXERCÍCIO 04 (precisa corrigir)
 /*
 
 function retornaNumerosPares(array) {
-    
-
+        let paresDoArray = function (numberdoArray) {
+        return (numberdoArray % 2 === 0);
+    }
+        let numberParArray = array.filter(parDoArray);
+         return numberParArray
 }
 
+
+
 */
- //EXERCÍCIO 05
+ //EXERCÍCIO 05 (precisa corrigir)
  /*
 function retornaNumerosParesElevadosADois(array) {
-     let pares = function (numero) {
-        return (numero % 2 ===0);
-        }
-        let numerosPar = array.filter(pares);
-         return numerosPar**2
+     let paresDoArray = function (numberdoArray) {
+        return (numberdoArray % 2 === 0);
+    }
+        let numberParArray = array.filter(parDoArray);
+         return numberParArray**2
     }
 */
-// EXERCÍCIO 06
+// EXERCÍCIO 06 (roda no console, mas não no teste)
+/*
 let array = [8, 2, 9, 4, 1]
-l
-function retornaMaiorNumero(array) {
-    
+let arrayTamanho = array.length 
+let arrayCrescente = array.sort((a, b) => a-b);
 
+function retornaMaiorNumero(array) {
+    return arrayCrescente[4]
 }
+
+console.log(arrayCrescente[4])
+console.log(arrayTamanho)
+console.log(arrayCrescente)
+
+*/
+
 
 /*
 // EXERCÍCIO 07
