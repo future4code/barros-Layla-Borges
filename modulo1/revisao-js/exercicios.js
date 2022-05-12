@@ -4,7 +4,7 @@
 
 
 // EXERCÍCIO 01
-
+/*
 let array = [1, 2, 5, 8, 9]   
 function retornaTamanhoArray(array) {
     return array.length;   
@@ -12,32 +12,80 @@ function retornaTamanhoArray(array) {
 }
 
 
-/*
+
 // EXERCÍCIO 02
+let array = [1, 2, 5, 8, 9]
 function retornaArrayInvertido(array) {
-  
+    return array.reverse();
+   
 }
+console.log(array.reverse())
+
 
 // EXERCÍCIO 03
+let array = [8, 2, 9, 4, 1]
 function retornaArrayOrdenado(array) {
+    return array.sort((a, b) => a - b);
   
 }
+console.log(retornaArrayOrdenado(array))
+*/
+
 
 // EXERCÍCIO 04
+/*
+
 function retornaNumerosPares(array) {
-  
+    let pares = function (numero) {
+        return (numero % 2 ===0);
+        }
+        let numerosPar = array.filter(pares);
+        return numerosPar
+    }
+
+    function retornaNumerosPares(array) {
+        let pares = function(item){
+            return item % 2 === 0
+        }
+        return array.filter(pares)
+      }
+
+    
+/*
+const par = 
+const apenasNumerosPares = arrayVariados.filter(array, indice, array) => 
+{
+    if (arrayVariados === par)
+    return 
 }
 
-// EXERCÍCIO 05
+const arrayPar = (array) => {
+    if (array % 2 === 0){
+        const resultadoPar = array
+        console.log(resultadoPar)
+    }
+
+}
+*/
+ //EXERCÍCIO 05
+ /*
 function retornaNumerosParesElevadosADois(array) {
- 
-}
-
+     let pares = function (numero) {
+        return (numero % 2 ===0);
+        }
+        let numerosPar = array.filter(pares);
+         return numerosPar**2
+    }
+*/
 // EXERCÍCIO 06
+let array = [8, 2, 9, 4, 1]
+l
 function retornaMaiorNumero(array) {
-  
+    return = array.sort((a, b) => a - b);
+let novoArray = 
 }
 
+/*
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
