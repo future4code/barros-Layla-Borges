@@ -83,9 +83,25 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 function retornaNPrimeirosPares(n) {
    
 }
-
+*/
 // EXERCÍCIO 09
+let LadoA
+let LadoB
+let LadoC
+
 function classificaTriangulo(ladoA, ladoB, ladoC) {
+
+    if (LadoA == LadoB && LadoB == LadoC) {
+            return "Este triângulo é equilátero";
+    } else if (LadoA !== LadoB && LadoB !== LadoC && LadoA !== LadoC) {
+            return "Este triângulo é Escaleno";
+    } else if (LadoA == LadoB || LadoA == LadoC || LadoC == LadoB) {  
+        return "Este triângulo é Isóceles";
+    }
+
+}
+
+/*
 
 }
 
