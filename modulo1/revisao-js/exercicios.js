@@ -1,133 +1,138 @@
 // ATENÇÃO!!!
-//    -> NÃO COMENTE NENHUMA DAS FUNÇÕES DECLARADAS!!! 
+//    -> NÃO COMENTE NENHUMA DAS FUNÇÕES DECLARADAS!!!
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
 
-// EXERCÍCIO 01
-/*
-let array = [1, 2, 5, 8, 9]   
+// EXERCÍCIO 01 
+let array = [1, 2, 5, 8, 9]
 function retornaTamanhoArray(array) {
-    return array.length;   
-    
+    return array.length;
 }
-
-
 
 // EXERCÍCIO 02
 let array = [1, 2, 5, 8, 9]
 function retornaArrayInvertido(array) {
     return array.reverse();
-   
 }
-console.log(array.reverse())
 
-
-// EXERCÍCIO 03
+// EXERCÍCIO 03 
 let array = [8, 2, 9, 4, 1]
 function retornaArrayOrdenado(array) {
     return array.sort((a, b) => a - b);
-  
 }
-console.log(retornaArrayOrdenado(array))
-*/
 
-
-// EXERCÍCIO 04 (precisa corrigir)
-/*
-
+// EXERCÍCIO 04 
 function retornaNumerosPares(array) {
-        let paresDoArray = function (numberdoArray) {
-        return (numberdoArray % 2 === 0);
+
+    let arrayDeNumerosPares = function (n) {
+        return (n % 2 === 0);
     }
-        let numberParArray = array.filter(parDoArray);
-         return numberParArray
+    let nPares = array.filter(arrayDeNumerosPares);
+    return nPares
 }
 
+// ------ DESAFIO 4  --------------
+function retornaNumerosPares(array) {
 
+    let arrayDeNumerosPares = []
+    for (const numeroPar of array) {
+        if (numeroPar % 2 === 0) {
+            arrayDeNumerosPares.push(numeroPar)
+        }
+    }
+    return arrayDeNumerosPares
+}
 
-*/
- //EXERCÍCIO 05 (precisa corrigir)
- /*
+//EXERCÍCIO 05 
 function retornaNumerosParesElevadosADois(array) {
-     let paresDoArray = function (numberdoArray) {
-        return (numberdoArray % 2 === 0);
-    }
-        let numberParArray = array.filter(parDoArray);
-         return numberParArray**2
-    }
-*/
-// EXERCÍCIO 06 (roda no console, mas não no teste)
-/*
-let array = [8, 2, 9, 4, 1]
-let arrayTamanho = array.length 
-let arrayCrescente = array.sort((a, b) => a-b);
 
-function retornaMaiorNumero(array) {
-    return arrayCrescente[4]
+    let arrayParElevado = []
+
+    for (const numeroPar of array) {
+        if (numeroPar % 2 === 0) {
+            arrayParElevado.push(numeroPar * numeroPar)
+
+        }
+    }
+    return arrayParElevado
 }
 
-console.log(arrayCrescente[4])
-console.log(arrayTamanho)
-console.log(arrayCrescente)
+// EXERCÍCIO 06 
+function retornaMaiorNumero(array) {
+    return array.reduce(function (a, b) {
+        return Math.max(a, b);
+    }, -Infinity);
+}
 
-*/
-
-
-/*
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 }
 
-// EXERCÍCIO 08
+// EXERCÍCIO 08 
 function retornaNPrimeirosPares(n) {
-   
-}
-*/
-// EXERCÍCIO 09
-let LadoA
-let LadoB
-let LadoC
 
+    const arrayPar = []
+    for (let i = 0; arrayPar.length < n; i++) {
+        if (i % 2 === 0) {
+            arrayPar.push(i);
+        }
+
+    }
+    return arrayPar
+}
+
+// EXERCÍCIO 09 
 function classificaTriangulo(ladoA, ladoB, ladoC) {
 
-    if (LadoA == LadoB && LadoB == LadoC) {
-            return "Este triângulo é equilátero";
-    } else if (LadoA !== LadoB && LadoB !== LadoC && LadoA !== LadoC) {
-            return "Este triângulo é Escaleno";
-    } else if (LadoA == LadoB || LadoA == LadoC || LadoC == LadoB) {  
-        return "Este triângulo é Isóceles";
+    if (ladoA == ladoB && ladoB == ladoC) {
+        return "Equilátero";
+    } else if (ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC) {
+        return "Escaleno";
+    } else if (ladoA == ladoB || ladoA == ladoC || ladoC == ladoB) {
+        return "Isósceles";
     }
-
-}
-
-/*
 
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+
 }
 
-// EXERCÍCIO 11
+// EXERCÍCIO 11 
 function retornaChamadaDeFilme(filme) {
-   
+
+    const filmeVestePrada = {
+        nome: 'O Diabo Veste Prada',
+        ano: 2006,
+        diretor: 'David Frankel',
+        atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+    }
+
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
+
 }
 
-// EXERCÍCIO 12
+// EXERCÍCIO 12 
 function retornaPessoaAnonimizada(pessoa) {
-   
+
+    const cadastroAnonimo = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+    return cadastroAnonimo
 }
+
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+
 }
 
 // EXERCÍCIO 14
@@ -137,11 +142,10 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-   
+
 }
-*/
