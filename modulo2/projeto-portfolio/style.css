@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px
+    
+  }
+
+  h2 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 30px
+    
+  }
+
+
+p {
+  text-align: justify;
+}
+
+header {
+  background-color: black;
+  color: chartreuse;
+}
+
+nav {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+nav > a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 110px;
+  border-radius: 10px;
+  color: chartreuse;
+  
+  }
+
+
+
+
+
+body {
+  background-image: url("https://www.claudiomotta.adv.br/wp-content/uploads/2016/07/background-preto-fundo-1.jpg");
+  color: aliceblue;
+  
+}
+
+
+#nome {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
+  padding: px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 180px;
+    
+}
+
+#curso {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  width: 100%;
+  padding: px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+    
+}
+
+
+
+/*sobre*/
+
+.sobre {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  padding: 100px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  bottom: 0px;
+  height: 50px;
+  padding-left: 130px;
+  padding-top: 100px;
+  display: inline-flexbox;
+}
+
+.sobre-background {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  width: 80%;
+  padding: 100px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  bottom: 0px;
+    
+  height: 500px;
+  padding-left: 130px;
+  padding-top: 130px;
+  background-color: #132b14;
+  display: inline-flexbox;
+}
+
+
+
+
+
+
+/*Galeria de Projetos > Projetos*/
+
+.opções-de-projetos {
+  color: #FFF;
+  text-align: center;
+  padding: 30px;
+  
+  
+  
+} .projeto-blackjack {
+      width: 10%;
+      height: 50px;
+      padding-left: 130px;
+      padding-top: 130px;
+      background-color: #57C7C3;
+      display: inline-block;
+  }
+  .projeto-loja-pet-shop-luna {
+      width: 10%;
+      height: 50px;
+      padding-left: 130px;
+      padding-top: 130px;
+      background-color: #FAA116;
+      display: inline-block;
+  }
+
+  section {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    border-radius: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+  }
+
+/*Contato*/
+
+#contato {
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align:center;
+  width: 100%;
+  padding: 0px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  bottom: 0px;
+  
+  
+    
+}
+  
+form {
+  color: rgb whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: justify;
+  width: 40%;
+  padding: 100px;
+  border-radius: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  
+    
+}
+ 
+/*footer*/
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+  text-align: center;
+  padding: 05px;
+}
