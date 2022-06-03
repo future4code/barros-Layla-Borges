@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+background-color: mediumvioletred;  
+display: flex;
+padding: 20px;
+justify-content: center;
+text-align: center;
+bottom: 0;
+position: fixed;
+width: 100%;
+}
+
+
+header {
+    background-color: mediumvioletred;
+    display: flex;
+    justify-content: space-between;
+   
+    height: 80px;
+    
+  
+}
+
+
+
+button {
+    padding: 10px 15px;
+    border: none;
+    font-size: 14px;
+    margin: 20px;
+    
+}
+
+
+.container {
+    display: flex;
+    
+    
+}
+
+nav {
+    background-color: #f2d0e0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 1000px;
+    
+}
+
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+      
+    height: 100%;
+    width: 150%;
+ 
+    
+}
+
+section {
+    width: 200px;
+    padding: 10px;
+    border: 1px;
+    box-shadow: 5px 5px 5px rgba(169,169,169);
+}
+
+img {
+    width: 105%;
+}
+
+h2 {
+    padding: 30px;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+        
+}
+
+.container-cabeçalho {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000%;   
+    justify-content: space-between
+}
+ 
+#bolinho {
+    width: 50%;
+    height:  60%;
+    align-items: center;
+}    
+
+#casinha {
+    display: flex;
+    width: 20px;
+    position: absolute;
+    
+}
+
+
+
+
+
