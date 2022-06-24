@@ -4,6 +4,9 @@ import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import layla from './components/CardGrande/layla.jpg';
 import labenu from './components/labenu.png'
+import CardPequeno from './components/CardPequeno/CardPequeno';
+import email2 from './components/CardPequeno/email2.png'
+import gps2 from './components/CardPequeno/gps2.png'
 
 function App() {
   return (
@@ -22,6 +25,24 @@ function App() {
         />
       </div>
 
+
+      <div className="page-section-container">
+        <CardPequeno 
+        imagem={email2}
+        email="layla***@gmail.com"
+        />
+      </div>
+
+
+      <div className="page-section-container">
+        <CardPequeno 
+        imagem={gps2}
+          endereço="Avenida Escola Politécnica...***"
+        />
+      </div>
+
+
+
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
@@ -29,10 +50,8 @@ function App() {
           nome="Labenu" 
           descricao="Customer Experience na Labenu" 
         />
-        
-       
-        
       </div>
+
 
       <div className="page-section-container">
         <h2>Minhas redes sociais</h2>
