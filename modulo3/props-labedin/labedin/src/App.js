@@ -3,6 +3,7 @@ import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import layla from './components/CardGrande/layla.jpg';
+import labenu from './components/labenu.png'
 
 function App() {
   return (
@@ -24,16 +25,13 @@ function App() {
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
+          imagem={labenu} 
           nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
+          descricao="Customer Experience na Labenu" 
         />
         
-        <CardGrande 
-          imagem="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0-768x768.png" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
-        />
+       
+        
       </div>
 
       <div className="page-section-container">
