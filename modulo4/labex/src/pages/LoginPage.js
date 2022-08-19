@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"
 import {useState} from "react"
 
-function Login() {
+export function Login() {
+    const [form, onChange, clear] = useForm({ email: "", password: "" })
 
     const navigate = useNavigate();
 
@@ -26,9 +27,19 @@ function Login() {
           "password": senha
       }
   
-      const fazerLogin = () => {
-          //axios.post(url, body, headers) - Vou trabalhar esse ponto, não esquecer!
+      const fazerLogin = (event) => {
+        event.preventDefault()
+
+          axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/juniorp/login", body, headers) 
+          .then((response) => {
+            console.log(response.data)
+            localStorage.setItem("token",response.data.token)
+            R.goToTripDetail(navigate)
+        })
+        .catch((error) => console.log(error.message))
+          
           console.log(body)
+
       }
 
     return (
