@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios"
 import {useState} from "react"
+import { BASE_URL } from "../constantes/constante";
+
 
 export function Login() {
     const [form, onChange, clear] = useForm({ email: "", password: "" })
@@ -30,7 +32,7 @@ export function Login() {
       const fazerLogin = (event) => {
         event.preventDefault()
 
-          axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/juniorp/login", body, headers) 
+          axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/layla/login", body) 
           .then((response) => {
             console.log(response.data)
             localStorage.setItem("token",response.data.token)
