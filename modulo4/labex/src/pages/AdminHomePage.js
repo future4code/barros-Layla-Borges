@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {Titulo} from './styled';
 
 function AdminHome() {
 
@@ -20,7 +21,7 @@ function AdminHome() {
 
     return (
         <section>
-            <h1>Área administrativa</h1>
+            <Titulo>Área administrativa</Titulo>
             <button onClick={goToCreateTrip}>Criar Viagem</button>
             <button onClick={goToTripDetails}>Detalhes da Viagem</button>
             <button onClick={goToLastPage}>Voltar</button>

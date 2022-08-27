@@ -1,7 +1,8 @@
+
 import { useState } from "react";
 
-export function useForm(initialState){
-    const [form, setForm] = useState(initialState)
+export function useForm (inicio){
+    const [form, setForm] = useState(inicio)
 
     const onChange = (event) => {
         const { name, value } = event.target;
@@ -9,7 +10,7 @@ export function useForm(initialState){
 
     }
     const clear=()=>{
-        setForm(initialState)
+        setForm(inicio)
     }
-    return [form,onChange,clear]
-}
+    return [form, onChange]
+};

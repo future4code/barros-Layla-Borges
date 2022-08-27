@@ -1,7 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {Titulo} from './styled';
+import {Form} from './styled';
 
-function CreateTrip() {
+
+import axios from "axios";
+
+const CreateTripPage=() => {
 
     const navigate = useNavigate();
 
@@ -9,13 +14,56 @@ function CreateTrip() {
         navigate(-1)
       }
 
-    return (
+    return( 
+     
+   <Form>
+      <Titulo>Criar Viagem</Titulo>
+      
+      <input
+          placeholder="Nome"
+          type="name"
+      />
 
-         <section>
-            <h1>Criar Viagem</h1>
-            <button onClick={goToLastPage}>Voltar</button>
-        </section>
-    );
+<input
+          placeholder="E-mail"
+          type="email"
+      />
+
+<input
+          placeholder="Planeta"
+          type="text"
+      />
+
+<input
+          placeholder="Data"
+          type="date"
+      />
+
+<input
+          placeholder="Descrição"
+          type="text"
+      />
+
+<input
+          placeholder="Duração em dias"
+          type="number"
+      />
+
+<input
+          placeholder="País"
+          type="select"
+      />
+
+<input type="submit" value="Enviar" />
+            
+   </Form>
+    
+       
+             
+              
+    
+            
+    )
 }
 
-export default CreateTrip;
+export default CreateTripPage

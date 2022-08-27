@@ -8,6 +8,10 @@ import ListTrips from "./ListTripsPage";
 import Login from "./LoginPage";
 import TripDetails from "./TripDetailsPage";
 
+
+
+
+
 // PASSO 1: CRIAÇÃO DAS ROTAS
 
 function Router() {
