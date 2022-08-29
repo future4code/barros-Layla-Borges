@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 
 
 function ListTrips() {
@@ -12,6 +12,10 @@ function ListTrips() {
         navigate ("/Inscricao")
     }
 
+    const goToCreateTripPage = () => {
+        navigate ("/CreateTrip")
+    }
+
     const goToLastPage = () => {
         navigate(-1)
       }
@@ -21,11 +25,16 @@ function ListTrips() {
         <section>
             <h1>Lista de Viagens - ListTrip</h1>
             <li>
-                <p>"Viagem para Marte"</p>
+                <Link to={'/TripDetails'}>
+                    <p>"Viagem 1"</p>
+                    <p>"Viagem 2"</p>
+                    <p>"Viagem 3"</p>
+                    
+                </Link>
+                
             </li>
                 
-            
-            <button onClick={goToApplicationFormPage}>Inscrever-se para Viagem</button>
+            <button onClick={goToCreateTripPage}>Criar Viagem</button>
             <button onClick={goToLastPage}>Voltar</button>
         </section>
         

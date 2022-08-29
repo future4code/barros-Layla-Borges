@@ -17,6 +17,10 @@ export function Login() {
 
     const navigate = useNavigate();
 
+    const goToLogin = () => {
+        navigate ("/ListTrips")
+    }
+
     const goToLastPage = () => {
         navigate(-1)
       }
@@ -40,7 +44,7 @@ export function Login() {
         .then((response) => 
         {
             window.localStorage.setItem('token', response.data.token) // Guarda o Token
-            goToLastPage(navigate);
+            goToLogin(navigate); // Direciona para a página Lista de Viagens após o Login
         })
         .catch((error) => console.log(error.message))
   }

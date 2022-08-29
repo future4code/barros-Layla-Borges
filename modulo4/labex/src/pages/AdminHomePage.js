@@ -7,6 +7,11 @@ function AdminHome() {
     const navigate = useNavigate();
 
     //AÇÃO DOS BOTÕES   
+
+    const goToLogin = () => {
+        navigate ("/Login")
+    }
+
     const goToCreateTrip = () => {
         navigate ("/CriarViagem")
     }
@@ -22,7 +27,8 @@ function AdminHome() {
     return (
         <section>
             <Titulo>Área administrativa</Titulo>
-            <button onClick={goToCreateTrip}>Criar Viagem</button>
+            <button onClick={goToLogin}>Login</button>
+           
             <button onClick={goToTripDetails}>Detalhes da Viagem</button>
             <button onClick={goToLastPage}>Voltar</button>
         </section>

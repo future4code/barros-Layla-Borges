@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none; /*Retira o sublinhado que fica no Link*/
+  color: inherit; /* Mantem a cor padrão sem o link ficar azul após clickar*/
+}

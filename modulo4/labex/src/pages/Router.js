@@ -9,7 +9,7 @@ import Login from "./LoginPage";
 import TripDetails from "./TripDetailsPage";
 
 
-
+// <button onClick={goToApplicationFormPage}>Inscrever-se para Viagem</button>
 
 
 // PASSO 1: CRIAÇÃO DAS ROTAS
@@ -20,10 +20,10 @@ function Router() {
             <Routes>
                 <Route index element={<Home />} />
                 <Route path="/Login" element={<Login />} />
-                <Route path="/AreaCliente" element={<ListTrips />} />
+                <Route path="/ListTrips" element={<ListTrips />} />
                 <Route path="/Inscricao" element={<ApplicationForm />} />
-                <Route path="/DetalhesDaViagem" element={<TripDetails />} />
-                <Route path="/CriarViagem" element={<CreateTrip />} />
+                <Route path="/TripDetails" element={<TripDetails />} />
+                <Route path="/CreateTrip" element={<CreateTrip />} />
                 <Route path="/AdminHome" element={<AdminHome />} />
             </Routes>
         </BrowserRouter>

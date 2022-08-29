@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import {Titulo} from './styled';
 
 
+
 function Home() {
 
     //IMPORTE DO USENAVIGATE
@@ -11,24 +12,26 @@ function Home() {
 
     // AÇÃO DOS BOTÕES
     const goToAdminHome = () => {
-        navigate ("/AdminHome")
+        navigate ("/Login")
     }
 
     const goToClientesViagens = () => {
-        navigate ("/AreaCliente")
+        navigate ("/Inscricao")
     }
 
-    const goToLogin = () => {
-        navigate ("/Login")
-    }
+   
 
     // BOTÕES QUE DIRECIONAM PARA ÁREA ADMINISTRATIVA OU DO CLIENTE
     return (
         <section>
+ 
             <Titulo>Home</Titulo>
+           
+   
+       
             <button onClick={goToAdminHome}>Administrativo</button>
             <button onClick={goToClientesViagens}>Cliente - Lista de Viagens</button>
-            <button onClick={goToLogin}>Login</button>
+           
         </section>
         
     );

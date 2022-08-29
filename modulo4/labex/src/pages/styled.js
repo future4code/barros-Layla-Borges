@@ -32,9 +32,26 @@ export const Form = styled.form`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: DarkOrange;
+  background-color: whitesmoke;
 
   `
+
+export const FormApplication = styled.form`
+  
+  width: 100vw; 
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  `
+
 export const TripList= styled.div`
 margin-top: 20px;
 border: none;
@@ -67,7 +84,5 @@ export const TripListContainer = styled.div`
   display: grid;
   grid-auto-flow: column;
   gap: 25px;
-  background-color: oldlace;
-  
-
+  background-color: whitesmoke;
   `
