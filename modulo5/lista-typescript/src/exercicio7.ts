@@ -1,3 +1,6 @@
-//EXERCÍCIO 1
+//* EXERCÍCIO 1
+
+    //^RESPOSTA1
+
 
 
