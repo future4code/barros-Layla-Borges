@@ -8,6 +8,10 @@ function ApplicationForm() {
 
     const navigate = useNavigate();
 
+    const goToTripDetails = () => {
+        navigate ("/DetalhesDaViagem")
+    }
+
     const goToApplicationFormPage = () => {
         navigate ("/Inscricao")
     }
@@ -57,7 +61,8 @@ function ApplicationForm() {
 
 
             
-            <button onClick={goToApplicationFormPage}>Inscrever-se para Viagem</button>
+            <button onClick={goToTripDetails}>Inscrever-se para Viagem</button>
+            
             <button onClick={goToLastPage}>Voltar</button>
             </FormApplication>
         
