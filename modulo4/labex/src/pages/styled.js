@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-
+export const Buttons = styled.div `
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+`
 
 export const Titulo= styled.h1`
   position: relative;
@@ -59,30 +63,28 @@ height: 50px;
 border-radius: 30px;
 outline: 0;
 font-size: 15px;
-padding:10px;
-padding-left:50px;
 cursor: pointer;
 width: 100%;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-   
     padding: 10px 8px 170px;
     border-radius: 4px;
-    margin: 10px 10px 0px 05px;
-    max-width: 500px;
+    align-content: center;
+    align-items: center;
+    max-width: 300px;
     width: 100%;
-
+    justify-self: center;
 `
 
 
 export const TripListContainer = styled.div`
   
-  width: 100vw; 
+  width: 98vw; 
   height: 100vh;
   background-size: cover;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-auto-flow: column;
-  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   background-color: whitesmoke;
+  
   `

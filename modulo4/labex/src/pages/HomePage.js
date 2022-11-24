@@ -1,7 +1,7 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
-
-import {Titulo} from './styled';
+import {Buttons, Titulo} from './styled';
+import Typography from '@mui/material/Typography';
 
 
 
@@ -23,17 +23,13 @@ function Home() {
 
     // BOTÕES QUE DIRECIONAM PARA ÁREA ADMINISTRATIVA OU DO CLIENTE
     return (
-        <section>
- 
-            <Titulo>Home</Titulo>
-           
-   
-       
-            <button onClick={goToAdminHome}>Administrativo</button>
-            <button onClick={goToClientesViagens}>Cliente - Lista de Viagens</button>
-           
+        <section> 
+            <Typography variant="h1">Home</Typography>
+                <Buttons>
+                    <button onClick={goToAdminHome}>Administrativo</button>
+                    <button onClick={goToClientesViagens}>Cliente - Lista de Viagens</button>
+                </Buttons>   
         </section>
-        
     );
 }
 
