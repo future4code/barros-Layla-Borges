@@ -1,0 +1,23 @@
+GET https://viacep.com.br/ws/05350000/json/
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/test
+content-type: application/json
+
+{
+    "cep": "05350000"
+}
+
+### 
+
+POST https://aula-webservices.onrender.com/users/create
+Content-Type: application/json
+
+{
+  "name": "Layla",
+  "nickname": "Laylita",
+  "email": "exerciciotest@gmail.com",
+  "zipcode": "05350000"
+}
