@@ -1,0 +1,14 @@
+### 
+GET http://localhost:3003/docente5
+
+###
+POST http://localhost:3003/docente5
+Content-Type: application/json
+
+{   
+    "id": "120",
+    "nome": "TESTE Alice Medeiros",
+    "email": "alice_medeiros@uorak.com"
+}
+
+
