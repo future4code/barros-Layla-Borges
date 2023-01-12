@@ -1,22 +1,26 @@
 import { Request, Response } from "express";
 import connection from "../connection";
 
-
-
-
-
 export default async function createDocente(
     req:Request,
     res:Response
 ):Promise <any> {
 
   try{  
-    const {id, nome, email} = req.body
+
+    const {id, nome, email, data_nasc} = req.body
 
  //   console.log(req.body["content-type"])
     
     await connection("docente5")
-        .insert({id, nome, email})
+        .insert(
+            {
+                id,
+                nome,
+                email,
+                data_nasc
+                
+            })
 
     res.status(201).end()
 } catch (error) {

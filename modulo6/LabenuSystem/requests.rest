@@ -6,9 +6,11 @@ POST http://localhost:3003/docente5
 Content-Type: application/json
 
 {   
-    "id": "120",
+    "id": "29",
     "nome": "TESTE Alice Medeiros",
-    "email": "alice_medeiros@uorak.com"
+    "email": "alice_medeiros@uorak.com",
+    "data_nasc": "01-05-2002"
+    
 }
 
 
