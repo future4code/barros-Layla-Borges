@@ -1,12 +1,12 @@
 /* POPULANDO A TABELA TURMA */
 
-INSERT INTO TURMA (id, nome)
+INSERT INTO turma (id, nome)
 VALUES ("01", "A");
 
-INSERT INTO TURMA (id, nome)
+INSERT INTO turma (id, nome)
 VALUES ("02", "B");
 
-SELECT * FROM TURMA;
+SELECT * FROM turma;
 
 /* POPULANDO A TABELA ESTUDANTE */
 

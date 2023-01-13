@@ -6,3 +6,11 @@ export type docente5 = {
     turma_id: string
 };
 
+export type turma = {
+    id: string,
+    nome: string,
+    docente: string,
+    estudante: string,
+    modulo: string
+};
+

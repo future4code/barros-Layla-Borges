@@ -1,26 +1,23 @@
 import { Request, Response } from "express";
 import connection from "../connection";
 
-export default async function createDocente(
+export default async function createTurma(
     req:Request,
     res:Response
 ):Promise <any> {
 
   try{  
 
-    const {id, nome, email, data_nasc, turma_id} = req.body
-
- //   console.log(req.body["content-type"])
+    const {id, nome, docente, estudante, modulo} = req.body
     
-    await connection("docente5")
+    await connection("turma")
         .insert(
             {
                 id,
                 nome,
-                email,
-                data_nasc,
-                turma_id
-                
+                docente,
+                estudante,
+                modulo
             })
 
     res.status(201).end()
