@@ -6,14 +6,14 @@ POST http://localhost:3003/docente5
 Content-Type: application/json
 
 {   
-    "id": "49",
-    "nome": "TESTE Alice Medeiros",
+    "id": "044",
+    "nome": "TESTE de integração",
     "email": "alice_medeiros@uorak.com",
-    "data_nasc": "01-05-2002"   
+    "data_nasc": "01-05-2002",
+    "turma_id": "01"   
 }
 
 ### 
-
 GET http://localhost:3003/turma
 
 ###
@@ -21,8 +21,11 @@ POST http://localhost:3003/turma
 Content-Type: application/json
 
 {   
-    "id": "59",
+    "id": "07",
     "nome": "TESTE TURMA",
-    "docente": "gABRIELA",
-    "estudante": "TESTE1"
+    "docente": "olar",
+    "estudante": "não sei",
+    "docente_id": "02"
+
+
 }

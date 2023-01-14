@@ -8,7 +8,7 @@ export default async function createTurma(
 
   try{  
 
-    const {id, nome, docente, estudante, modulo} = req.body
+    const {id, nome, docente, estudante, modulo, docente_id, estudante_id} = req.body
     
     await connection("turma")
         .insert(
@@ -17,7 +17,10 @@ export default async function createTurma(
                 nome,
                 docente,
                 estudante,
-                modulo
+                modulo,
+                docente_id,
+                estudante_id
+   
             })
 
     res.status(201).end()

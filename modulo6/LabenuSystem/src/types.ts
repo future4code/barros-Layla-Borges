@@ -12,5 +12,7 @@ export type turma = {
     docente: string,
     estudante: string,
     modulo: string
+    docente_id: string,
+    estudante_id: string
 };
 
