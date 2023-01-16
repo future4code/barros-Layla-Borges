@@ -1,3 +1,5 @@
+// TIPAGEM
+
 export type docente5 = {
     id: string,
     nome: string,
@@ -15,4 +17,6 @@ export type turma = {
     docente_id: string,
     estudante_id: string
 };
+
+
 

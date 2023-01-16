@@ -10,9 +10,10 @@ SELECT * FROM turma;
 
 /* POPULANDO A TABELA ESTUDANTE */
 
+/*REFATORAR*/
 INSERT INTO ESTUDANTE (id, nome, email, data_nasc, turma_id)
-VALUES ("01", "Carlos Alberto", "carlos_alberto@uorak.com", "1980-10-25", "01"),
-	   ("02", "Valentina Vich", "valentina_vich@uorak.com", "2000-09-02", "02");
+VALUES ("0155", "Carlos Alberto", "carlos_alberto@uorak.com", "1980-10-25", "01"),
+	   ("0222", "Valentina Vich", "valentina_vich@uorak.com", "2000-09-02", "02");
        
 SELECT * FROM ESTUDANTE; 
 

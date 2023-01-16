@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import connection from "../connection";
 
+
 export default async function createDocente(
     req:Request,
     res:Response

@@ -3,6 +3,8 @@ import dotenv from "dotenv"
 
 dotenv.config()
 
+// CONEXÃO COM O BANCO DE DADOS
+
 const connection = knex({
     client: "mysql",
     connection: {

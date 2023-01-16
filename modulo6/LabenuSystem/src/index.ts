@@ -5,9 +5,15 @@ import createTurma from "./endpoints/createTurma";
 import getAllTurmas from "./endpoints/getAllTurmas";
 
 
-app.get("/docente5", getAllDocentes);
-app.post("/docente5", createDocente);
+// -------- ENDPOINTS E ROTAS ---------------------------------------
+   
+// REQUISIÇÕES QUANTO AO DOCENTE  -----------------------------------
+app.get("/docente5", getAllDocentes);   // OBTER TODOS OS DOCENTES
+app.post("/docente5", createDocente);   // CRIAR NOVO DOCENTE
 
-app.get("/turma", getAllTurmas);
-app.post("/turma", createTurma);
+
+
+// REQUISIÇÕES QUANTO A TURMA ----------------------------------------
+app.get("/turma", getAllTurmas);    //OBTER TODAS AS TURMAS
+app.post("/turma", createTurma);   // CRIAR NOVA TURMA
 
