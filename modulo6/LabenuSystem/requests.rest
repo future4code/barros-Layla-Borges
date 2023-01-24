@@ -1,0 +1,43 @@
+
+// REQUISIÇÕES -----------------------------------------------------
+
+
+### 
+// OBTER TODOS OS DOCENTES
+GET http://localhost:3003/docente5
+
+
+### 
+// CRIAR NOVO DOCENTE (ADICIONE UM ID NOVO)
+POST http://localhost:3003/docente5
+Content-Type: application/json
+
+{   
+    "id": "054",
+    "nome": "TESTE de integração",
+    "email": "alice_medeiros@uorak.com",
+    "data_nasc": "01-05-2002",
+    "turma_id": "01"   
+}
+
+
+
+### 
+// OBTER TODAS AS TURMAS
+GET http://localhost:3003/turma
+
+
+
+### 
+// CRIAR NOVA TURMA (ADICONE UM ID NOVO)
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{   
+    "id": "115",
+    "nome": "TESTE TURMA",
+    "docente": "olar",
+    "estudante": "não sei",
+    "docente_id": "02"
+}
+
